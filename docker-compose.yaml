@@ -22,5 +22,7 @@ services:
       MYSQL_USER: wordpress
       MYSQL_PASSWORD: wordpress
       MYSQL_RANDOM_ROOT_PASSWORD: '1'
+    ports:
+      - 3306:3306
     volumes:
       - ./db-data:/var/lib/mysql
